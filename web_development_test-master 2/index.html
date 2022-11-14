@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .banner {
+            /* The image used */
+            background-image:'dataset/town.jpg'
+        }
+
+
+
+    </style>
+    <h1>Heading1</h1>
+</head>
+
+<body>
+
+    <p>This is a paragraph description
+        <img src="dataset/people.jpg" alt="Girl in a jacket">
+    </p>
+
+    <a href="https://www.google.com/">click here to access google</a>
+
+    <div class="banner">
+        <div>
+        <h1>name: Happy Town</h1>
+        <h2>slogan: Welcome to the our Happy Town</h2>
+        <input id="date" type="date" /> 
+        </div>  
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="test.html">TEST</a></li>
+        </ul>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+      </ul>
+
+    </div>
+
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-62.04673002474011%2C16.95487694424327%2C-61.60521696321666%2C17.196751341562923&amp;layer=mapnik" 
+    style="border: 1px solid black"></iframe>
+    <br/><small><a href="https://www.openstreetmap.org/#map=12/17.0759/-61.8260">View Larger Map</a></small>
+
+
+
+   
+
+
+<script>
+    // add time
+    var date = new Date();
+    var currentDate = date.toISOString().slice(0,10);
+    var currentTime = date.getHours() + ':' + date.getMinutes();
+    document.getElementById('date').value = currentDate;
+
+
+</script>
+
+
+
+  </body>
+  </html>
